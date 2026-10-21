@@ -1,6 +1,3 @@
-/**
- * app.js — точка входа: собирает профиль и запускает все модули.
- */
 (function () {
   var profile = window.PROFILE || {};
   var statRefs = { values: {}, nodes: {} };
