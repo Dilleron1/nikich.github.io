@@ -1,9 +1,3 @@
-/* ============================================================
-   effects.css — экран входа, появление блоков, тост, кастомный курсор
-   ============================================================ */
-
-/* ---------- экран входа ---------- */
-
 .enter {
   position: fixed;
   inset: 0;
@@ -109,8 +103,6 @@
   }
 }
 
-/* ---------- появление блоков ---------- */
-
 [data-reveal] {
   opacity: 0;
   transform: translateY(14px);
@@ -133,8 +125,6 @@ body.is-ready [data-reveal]:nth-child(2) {
 body.is-ready [data-reveal]:nth-child(3) {
   transition-delay: 0.17s;
 }
-
-/* ---------- тост ---------- */
 
 .toast {
   position: fixed;
@@ -168,13 +158,9 @@ body.is-ready [data-reveal]:nth-child(3) {
   box-shadow: 0 14px 34px -16px rgba(var(--hot-rgb), 1);
 }
 
-/* ---------- подсказка плеера без трека ---------- */
-
 .player.is-empty .player__meta {
   opacity: 0.5;
 }
-
-/* ---------- уважение к настройкам системы ---------- */
 
 @media (prefers-reduced-motion: reduce) {
   *,
