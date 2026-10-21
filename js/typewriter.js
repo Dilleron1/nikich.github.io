@@ -1,6 +1,3 @@
-/**
- * typewriter.js — поочерёдно печатает и стирает фразы в элементе.
- */
 window.Typewriter = (function () {
   var TYPE_SPEED = 55;
   var DELETE_SPEED = 28;
