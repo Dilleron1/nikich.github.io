@@ -1,6 +1,3 @@
-/**
- * interactions.js — тост, копирование в буфер, наклон карточки, лайк.
- */
 window.Interactions = (function () {
   var TOAST_DURATION = 2000;
   var TILT_MAX = 5;
