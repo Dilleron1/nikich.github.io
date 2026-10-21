@@ -1,8 +1,3 @@
-/**
- * counters.js — локальная статистика: просмотры, лайки, время.
- * Данные хранятся в localStorage, то есть считаются только для тебя.
- * Для настоящих просмотров со всех устройств подключи внешний счётчик (см. README).
- */
 window.Counters = (function () {
   var PREFIX = "bio:";
 
@@ -19,7 +14,6 @@ window.Counters = (function () {
     try {
       window.localStorage.setItem(PREFIX + key, String(value));
     } catch (error) {
-      /* приватный режим — молча пропускаем */
     }
   }
 
@@ -67,7 +61,6 @@ window.Counters = (function () {
     window.requestAnimationFrame(step);
   }
 
-  /** Считает заход и возвращает новое значение просмотров. */
   function registerView(seed) {
     var base = Number(seed) || 0;
     var current = readNumber("views", base);
@@ -80,7 +73,6 @@ window.Counters = (function () {
     return readNumber("views", Number(seed) || 0);
   }
 
-  /** Часы в формате ЧЧ:ММ:СС по московскому времени. */
   function startClock(element, timeZone) {
     if (!element) return function () {};
     var zone = timeZone || "Europe/Moscow";
@@ -117,7 +109,6 @@ window.Counters = (function () {
     };
   }
 
-  /** Сколько времени вкладка открыта: 0:07, 3:41, 1:02:15 */
   function startUptime(element) {
     if (!element) return function () {};
     var startedAt = Date.now();
