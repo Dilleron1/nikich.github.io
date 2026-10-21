@@ -1,6 +1,3 @@
-/**
- * background.js — частицы на canvas: точки и связи между ними.
- */
 window.Background = (function () {
   var TWO_PI = Math.PI * 2;
 
@@ -18,7 +15,6 @@ window.Background = (function () {
     palette: { accent: "168, 85, 247", hot: "232, 121, 249" }
   };
 
-  /** Цвета берём из CSS-переменных, чтобы тема жила в одном месте. */
   function readPalette() {
     var styles = window.getComputedStyle(document.documentElement);
     var accent = styles.getPropertyValue("--accent-rgb");
