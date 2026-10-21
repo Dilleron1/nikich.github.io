@@ -1,7 +1,3 @@
-/**
- * render.js — собирает карточку профиля из window.PROFILE.
- * Текстовые значения вставляются через textContent (без ручного экранирования).
- */
 window.Render = (function () {
   function el(tag, className) {
     var node = document.createElement(tag);
