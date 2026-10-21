@@ -1,8 +1,3 @@
-/**
- * Набор SVG-иконок (24x24, currentColor).
- * Icons.get(name) возвращает строку с <svg>.
- * Контуры соцсетей — официальные логотипы (Simple Icons, CC0).
- */
 window.Icons = (function () {
   var PATHS = {
     discord:
