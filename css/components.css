@@ -1,7 +1,3 @@
-/* ============================================================
-   components.css — карточка, hero, ссылки, статистика, плеер
-   ============================================================ */
-
 .stage {
   position: relative;
   z-index: 1;
@@ -20,8 +16,6 @@
   color: var(--muted-2);
   text-align: center;
 }
-
-/* ---------- карточка ---------- */
 
 .card {
   position: relative;
@@ -80,8 +74,6 @@
   border-bottom-right-radius: var(--radius);
 }
 
-/* ---------- hero ---------- */
-
 .hero {
   display: flex;
   align-items: center;
@@ -134,7 +126,6 @@
   box-shadow: 0 0 12px rgba(196, 181, 253, 0.8);
 }
 
-/* «не беспокоить» — красный кружок с полоской */
 .avatar-status[data-status="dnd"] {
   background: #ed4245;
   box-shadow: 0 0 12px rgba(237, 66, 69, 0.9);
@@ -222,7 +213,6 @@
   animation: caret-blink 1s steps(1) infinite;
 }
 
-/* ---------- био и факты ---------- */
 
 .bio {
   font-size: 15px;
@@ -264,8 +254,6 @@
   overflow-wrap: anywhere;
 }
 
-/* ---------- соцсети ---------- */
-
 .socials__list {
   display: flex;
   flex-wrap: wrap;
@@ -299,14 +287,10 @@
 .social:active {
   transform: translateY(-1px) scale(0.97);
 }
-
-/* фиксируем размер, чтобы глифы не «плясали» */
 .social .icon {
   width: 20px;
   height: 20px;
 }
-
-/* ---------- ссылки ---------- */
 
 .links__list {
   display: flex;
@@ -401,8 +385,6 @@
   color: rgba(var(--accent-rgb), 0.85);
 }
 
-/* ---------- статистика ---------- */
-
 .card__footer {
   padding-top: 18px;
   border-top: 1px solid rgba(var(--accent-rgb), 0.15);
@@ -462,8 +444,6 @@
   opacity: 1;
   animation: heart-pop 0.45s var(--ease);
 }
-
-/* ---------- плеер ---------- */
 
 .player {
   position: fixed;
@@ -583,8 +563,6 @@
 .player.is-playing .player__bars span:nth-child(4) {
   animation-delay: 0.45s;
 }
-
-/* ---------- анимации ---------- */
 
 @keyframes bar-bounce {
   0%,
