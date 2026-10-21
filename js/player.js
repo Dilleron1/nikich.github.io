@@ -1,7 +1,3 @@
-/**
- * player.js — фоновый трек с плавным появлением звука.
- * Если файла нет, плеер тихо помечается как пустой и не мешает странице.
- */
 window.Player = (function () {
   var VOLUME = 0.45;
   var FADE_STEPS = 14;
@@ -25,7 +21,6 @@ window.Player = (function () {
       try {
         window.localStorage.setItem(STORAGE_KEY, value ? "on" : "off");
       } catch (error) {
-        /* приватный режим — просто игнорируем */
       }
     }
 
